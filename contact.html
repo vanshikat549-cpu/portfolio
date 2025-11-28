@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-content">
+            <h1>Contact Me</h1>
+            <p>If you want to collaborate, ask something, or just connect — feel free to reach out.</p>
+
+            <div class="contact-box">
+
+                <a href="mailto:vanshika988390@gmail.com" class="info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Gmail</h3>
+                        <p>vanshika988390@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/vanshika-2b4295378" target="_blank" class="info">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/vanshika-2b4295378</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/vanshikat549-cpu" target="_blank" class="info">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>github.com/vanshikat549-cpu</p>
+                    </div>
+                </a>
+
+            </div>
+    </section>
+
+</body>
+</html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    padding: 20px 0;
+    background: black; 
+}
+
+.navlist{
+    display: flex;
+    gap: 3rem;
+}
+
+.navlist li{
+    list-style: none;
+}
+
+.navlist li a{
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transition: .4s;
+}
+
+.navlist li a:hover::after,
+.navlist .active::after{
+    transform: scaleX(1);
+}
+
+
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 8rem 6rem;
+}
+
+.contact-content{
+    width: 50%;
+}
+
+.contact-content h1{
+    font-size: 3rem;
+    color: #5db9ee;
+    margin-bottom: 1rem;
+}
+
+.contact-content p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.info:hover{
+    background: rgba(93, 185, 238, 0.1);
+    transform: translateX(10px);
+}
+
+.info i{
+    font-size: 1.8rem;
+    color: #5db9ee;
+}
+
+.info h3{
+    font-size: 1.2rem;
+}
+
+.info p{
+    font-size: 1rem;
+    color: #ddd;
+
+}
+</style>

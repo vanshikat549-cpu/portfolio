@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h1>About Me</h1>
+
+            <p>
+                I'm Vanshika, a Computer Science Engineering student at Chandigarh Group of Colleges, Jhanjeri affiliated to IKGPTU, passionate about artificial intelligence and machine learning  web
+                development, and building meaningful digital solutions.
+            </p>
+
+            <p>
+                I completed my schooling from <b> Guru Harkrishan Public School, Karnal Haryana affiliated to CBSE</b> where I developed 
+                my interest in technology.
+            </p>
+
+            <p>
+                Currently, I am improving my skills in HTML, CSS, UI layout structure, and beginner-level 
+                machine learning concepts. I am also exploring C and C++ to strengthen my programming 
+                fundamentals and expand my technical base.
+            </p>
+
+            <p>
+                I live in <b>Karnal, Haryana</b>, and my goal is to build a strong technical foundation during 
+                my college years. I aim to create projects that are clean, functional, and solve real-world 
+                problems while improving my development workflow.
+            </p>
+
+            <p>
+                I believe in continuous learning, discipline, and building a professional identity through 
+                consistency, creativity, and smart technical work.
+            </p>
+        </div>
+        <div class="about-right">
+            <div class="profile-card">
+
+                <h2>Quick Highlights</h2>
+                <ul>
+                    <li><i class="fa-solid fa-code"></i> Front-end Developer</li>
+                    <li><i class="fa-solid fa-brain"></i> AI/ML Learner</li>
+                    <li><i class="fa-solid fa-lightbulb"></i> Creative Thinker</li>
+                </ul>
+
+                <h2>Skills</h2>
+                <div class="skills-box">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.navlist{
+    display: flex;
+    gap: 3rem;
+}
+
+.navlist li{
+    list-style: none;
+}
+
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+}
+
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .4s;
+}
+
+.navlist li a:hover::after,
+.navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.about-section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 6rem;
+    gap: 5rem;
+}
+
+.about-content{
+    width: 50%;
+}
+
+.about-content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #5db9ee;
+}
+
+.about-content p{
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+    color: #ddd;
+}
+
+.about-right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.profile-card h2{
+    color: #5db9ee;
+    margin: 1rem 0 0.7rem 0;
+    font-size: 1.3rem;
+}
+
+.profile-card ul{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.profile-card ul li{
+    margin-bottom: 0.6rem;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+.skills-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.skills-box span{
+    background: #111;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid #333;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+</style>
+

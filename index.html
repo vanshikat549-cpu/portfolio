@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+<div class="portfolio-container">
+    <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li> 
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+    </ul>
+
+    <div class="left-container">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/vanshika-2b4295378" target="_blank" class="icon-link">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/vanshikat549-cpu" target="_blank" class="icon-link">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+        <div class="content">
+            <h2>Welcome to My Portfolio</h2>
+            <h1>WEB DEVELOPER</h1>
+            <p class="intro">I'M VANSHIKA</p>
+
+            <p class="detail">
+                Computer Science Engineering student at Chandigarh Group of Colleges, Jhanjeri affiliated to IKGPTU. 
+                Currently improving skills in HTML, CSS, UI layout, and beginner-level machine learning concepts. 
+                Exploring C and C++ to strengthen programming fundamentals.
+            </p>
+
+            <div class="button-container">
+                <button onclick="location.href='project.html'">VIEW PROJECT</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-container"></div>
+
+    <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</div>
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 10vh;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+}
+
+.left-container {
+    width: 70%;
+    background: black;
+    height: 100vh;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.right-container {
+    width: 30%;
+    background: linear-gradient(-45deg , #3877FF, black);
+    height: 100vh;
+}
+
+.content {
+    color: white;
+    margin-left: 4rem;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #5db9ee;
+}
+
+.intro {
+    font-size: 1.5rem;
+}
+
+.detail {
+    font-size: 1.1rem;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.icon-link i {
+    font-size: 1.7rem;
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.icon-link:hover i {
+    color: #5db9ee;
+    transform: scale(1.2);
+}
+
+.button-container button {
+    border: .1rem solid #5db9ee;
+    padding: .8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    transition: 0.3s;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background: #5db9ee;
+    color: white;
+}
+
+.design .circle {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, black 50%);
+    width: 38rem;
+    height: 38rem;
+}
+
+.circle:nth-child(2){
+    background-image: url("portfolio.jpg"); 
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 30rem;
+    border: .3rem solid #fff;
+    box-shadow: 0 0 1rem #fff, 0 0 2rem #3877FF, 0 0 4rem #3877FF;
+}
+
+.navlist li a::after,
+.navlist .active::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: .1rem;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navlist li a:hover::after,
+.navlist .active::after {
+    transform: scaleX(1);
+}
+</style>
+
